@@ -117,7 +117,7 @@ def get_cookie(row):
     driver.get(random_link)
 
     # скролл страницы
-    for i in range(10):
+    for i in range(2):
         driver.execute_script(
             'window.scrollTo(0, document.body.scrollHeight);'
         )
@@ -178,8 +178,6 @@ def main():
 
     try:
         t1 = time.time()
-        get_list_links(URL, ROOT_URL)
-        fill_database()
         view_all_entries()
         t2 = time.time()
         print(f'Задача завершена!\n {t2 - t1} секунд')
@@ -189,4 +187,5 @@ def main():
 
 
 if __name__ == '__main__':
+    fill_database()
     main()
