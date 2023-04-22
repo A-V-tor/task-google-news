@@ -35,7 +35,7 @@ def get_list_links(url, root_url):
         try:
             chunk_links = i.get('href')[1:]
             if 'articles' in chunk_links:
-                list_links.append(root_url + i.get('href'))
+                list_links.append(root_url + chunk_links)
         except Exception as error:
             print(error)
 
