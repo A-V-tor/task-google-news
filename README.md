@@ -30,3 +30,34 @@
 - Собираем профиля из таблицы Cookie Profile (кол-во потоков)
 - Используем Pool для создания потоков на каждый профиль
 - Ограничение 5 одновременных потоков
+
+<h1 align="center">Развертывание проекта</h1>
+
+<h2>Скачать проект</h2>
+
+```
+  git clone git@github.com:A-V-tor/task-google-news.git
+```
+
+```
+  cd task-google-news
+```
+
+<h2> Создать виртуальное окружение и установить зависимости</h2>
+
+```
+    python -m venv venv
+    source venv/bin/activate
+    
+```
+`python -m pip install -r requirements.txt` </br> </br>
+<p> Скрипт работает через браузер Google Chrome</p>
+
+```
+    python -i task_google_news/main.py
+    
+```
+
+<img src="https://github.com/A-V-tor/task-google-news/blob/main/image.png"></br>
+<h3>Пример базы данных</h3>
+<img src="https://github.com/A-V-tor/task-google-news/blob/main/db.png">
